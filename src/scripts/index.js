@@ -13,7 +13,7 @@ let text = "";
 const encryptedText = () => {
   [...text].forEach((letter) => {
     [...alphabet].forEach((item, index) => {
-      if (item == letter) {
+      if (item === letter) {
         cryptography.push(alphabet[index + number % alphabet.length]);
       }
     });
