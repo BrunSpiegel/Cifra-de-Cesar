@@ -10,7 +10,7 @@ let cryptography = [];
 let number = "";
 let text = "";
 
-const encryptedText = () => {
+function encryptedText() {
   [...text].forEach((letter) => {
     [...alphabet].forEach((item, index) => {
       if (item === letter) {
@@ -18,7 +18,7 @@ const encryptedText = () => {
       }
     });
   });
-};
+}
 
 const printText = () => {
   $paragraph.textContent = cryptography;
@@ -28,12 +28,14 @@ const cryptographyReset = () => {
   cryptography = [];
 };
 
-$inputText.addEventListener("change", (words) => {
-  text = words.target.value;
+$inputText.addEventListener("change", (e) => {
+  const words = e.target
+  text = words.value;
 });
 
-$inputNumber.addEventListener("change", (numbers) => {
-  number = parseInt(numbers.target.value);
+$inputNumber.addEventListener("change", (e) => {
+  const numbers = e.target
+  number = parseInt(numbers.value);
 });
 
 $button.addEventListener("click", () => {
