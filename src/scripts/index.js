@@ -12,9 +12,9 @@ let text = [];
 
 function encryptedText() {
   [...text].forEach((letter) => {
-    [...alphabet].forEach((item, index) => {
+    [...alphabet].forEach((item, idx) => {
       if (item === letter) {
-        cryptography.push(alphabet[index + number % alphabet.length]);
+        cryptography.push(alphabet[idx + number % alphabet.length]);
       }
     });
   });
