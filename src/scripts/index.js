@@ -7,8 +7,8 @@ const $resetText = document.querySelector(".reset-text");
 const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
 let cryptography = [];
-let number = "";
-let text = "";
+let number = [];
+let text = [];
 
 function encryptedText() {
   [...text].forEach((letter) => {
