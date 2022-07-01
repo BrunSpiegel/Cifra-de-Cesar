@@ -25,7 +25,7 @@ const printText = () => {
 };
 
 const cryptographyReset = () => {
-  cryptography = [];
+  cryptography = [].join('');
 };
 
 $inputText.addEventListener("change", (e) => {
