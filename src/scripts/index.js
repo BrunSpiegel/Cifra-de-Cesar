@@ -21,11 +21,11 @@ function encryptedText() {
 }
 
 const printText = () => {
-  $paragraph.textContent = cryptography;
+  $paragraph.textContent = cryptography.join('');
 };
 
 const cryptographyReset = () => {
-  cryptography = [].join('');
+  cryptography = [];
 };
 
 $inputText.addEventListener("change", (e) => {
